@@ -16,7 +16,7 @@ async function bootstrap() {
       'X-Requested-With',
       'apollo-require-preflight',
     ],
-    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS']
+    methods: ['GET', 'PUT', 'POST', 'DELETE', 'OPTIONS'],
   });
   app.use(cookieParser());
   app.use(graphqlUploadExpress({ maxFileSize: 10000000000, maxFiles: 1 }));
